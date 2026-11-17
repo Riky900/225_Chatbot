@@ -1,0 +1,204 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#090d18">
+    <title>ChatBotAI — Chat Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="layout">
+
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+
+        <div class="brand">
+            <div class="brand-icon">✦</div>
+            <div>
+                <b>ChatBot<span>ai</span></b>
+                <small>YOUR AI COMPANION</small>
+            </div>
+        </div>
+
+        <button class="new-chat" id="newChatBtn">
+            ＋ &nbsp; Percakapan baru
+        </button>
+
+        <div class="section-label">MENU</div>
+
+        <div class="nav active">◈ &nbsp; Chat Assistant</div>
+        <div class="nav">⌘ &nbsp; Powered by OpenRouter</div>
+
+        <div class="side-bottom">
+
+            <div class="status">
+                <i></i>
+                <div>
+                    <b>AI siap membantu</b>
+                    <small>Model Ling 3.2 Flash</small>
+                </div>
+            </div>
+
+            <div class="profile">
+                <div class="avatar">N</div>
+                <div>
+                    <b>ChatBotAI Assistant</b>
+                    <small>Personal workspace</small>
+                </div>
+            </div>
+
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main">
+
+        <header class="topbar">
+
+            <button class="mobile-menu" id="mobileMenu">
+                ☰
+            </button>
+
+            <div class="top-title">
+                <i></i>
+                <b>Chat Assistant</b>
+                <span>LING 3.2 FLASH</span>
+            </div>
+
+            <button class="clear" id="clearBtn">
+                ⌫ <span>Hapus chat</span>
+            </button>
+
+        </header>
+
+        <!-- Chat Area -->
+        <section class="chat-area" id="chatArea">
+
+            <div class="welcome" id="welcome">
+
+                <div class="orb">✦</div>
+
+                <div class="eyebrow">
+                    KENALAN DENGAN ChatBotAI
+                </div>
+
+                <h1>
+                    Ada yang bisa<br>
+                    aku <em>bantu hari ini?</em>
+                </h1>
+
+                <p>
+                    Tanyakan apa saja. Aku siap membantu mencari ide,<br class="desktop">
+                    menjelaskan materi, dan menyelesaikan pekerjaanmu.
+                </p>
+
+                <!-- Suggestion Cards -->
+                <div class="suggestions">
+
+                    <button class="suggestion"
+                        data-prompt="Jelaskan apa itu JavaScript dengan contoh sederhana.">
+
+                        <b class="ico purple">⌘</b>
+
+                        <span>
+                            <strong>Belajar coding</strong>
+                            <small>Jelaskan JavaScript untuk pemula</small>
+                        </span>
+
+                        <label>↗</label>
+                    </button>
+
+                    <button class="suggestion"
+                        data-prompt="Bantu aku membuat ide proyek aplikasi web yang menarik.">
+
+                        <b class="ico blue">✧</b>
+
+                        <span>
+                            <strong>Cari inspirasi</strong>
+                            <small>Temukan ide proyek aplikasi web</small>
+                        </span>
+
+                        <label>↗</label>
+                    </button>
+
+                    <button class="suggestion"
+                        data-prompt="Buatkan ringkasan materi yang singkat tetapi tetap mencakup poin penting.">
+
+                        <b class="ico orange">▤</b>
+
+                        <span>
+                            <strong>Ringkas materi</strong>
+                            <small>Ambil inti dari sebuah pembahasan</small>
+                        </span>
+
+                        <label>↗</label>
+                    </button>
+
+                    <button class="suggestion"
+                        data-prompt="Berikan tips agar lebih produktif saat mengerjakan tugas kuliah.">
+
+                        <b class="ico green">◷</b>
+
+                        <span>
+                            <strong>Tips produktivitas</strong>
+                            <small>Atur waktu dan selesaikan tugas</small>
+                        </span>
+
+                        <label>↗</label>
+                    </button>
+
+                </div>
+            </div>
+
+            <!-- Pesan Chat -->
+            <div class="messages" id="messages"></div>
+
+        </section>
+
+        <!-- Input Chat -->
+        <footer class="composer-wrap">
+
+            <form class="composer" id="chatForm">
+
+                <textarea
+                    id="messageInput"
+                    rows="1"
+                    placeholder="Tulis pesanmu di sini..."
+                    aria-label="Tulis pesan">
+                </textarea>
+
+                <div class="composer-bottom">
+
+                    <small>
+                        ✦ ChatBotAI dapat membuat kesalahan.
+                        Periksa kembali jawabannya.
+                    </small>
+
+                    <button id="sendBtn" type="submit">
+                        <span>Kirim</span>
+                        <b>↑</b>
+                    </button>
+
+                </div>
+
+            </form>
+
+            <div class="footnote">
+                Dibuat dengan <span>♥</span> · ChatBotAI Chat
+            </div>
+
+        </footer>
+
+    </main>
+
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
